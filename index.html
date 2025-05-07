@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立即登入盡享安全便利的網購樂趣 | 蝦皮購物</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            background-color: rgb(255, 255, 255);
+            height: 84px;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .navbar img{
+            margin: -12px 20px 0px 125px;
+            width: 220px;
+            height: 85px;
+            padding: 0px;
+        }
+
+        .navbar p{
+            color: #333;
+            margin: 15px 0px 0px 10px;
+            font-size: 200%;
+        }
+
+        .navbar a{
+            margin: 20px 180px 0px 0px;
+            font-size: 1.2rem;
+            color: #ed3911;
+            text-decoration: none;
+            margin-left: auto;
+        }
+
+        .main {
+            position: relative; /* 為了讓 .login-container 定位基準對齊這邊 */
+            width: 100%;
+            background-image: url('./image/shopee.png');
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(238, 77, 45);
+            height: 600px;
+        }
+
+        .login-container {
+            position: absolute;
+            top: 75px;
+            right: 250px;
+            width: 400px;
+            height: 450px;
+            background-color: rgba(255, 255, 255);
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .login-container h2 {
+            margin: 10px 10px 10px 10px;
+            font-size: 5rem;
+            color: #333;
+        }
+
+        .login-container p {
+            margin: 0 0 25px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .login-container form input {
+            width: 88%;
+            height: 20px;
+            padding: 10px;
+            margin: 10px 0px 25px 10px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            align-items: center;
+        }
+
+        .login-container form button {
+            display: block; /* 確保按鈕是區塊元素 */
+            width: 94%;
+            height: 45px;
+            background-color: #eb836b;
+            color: #fff;
+            margin: 10px 0px 15px 10px;
+            border: none;
+            border-radius: 2px;
+            align-items: center;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .login-container form button:hover {
+            background-color: #ee4d2d;
+        }
+
+        .login-container a {
+            display: block;
+            color: #4477c9;
+            margin: auto 0px 30px 10px;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            color: #d12f0f;
+        }
+
+        input::placeholder {
+            color: #bebebe;
+        }
+
+        .tip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .tip hr {
+            width: 35%; /* 控制水平線的寬度 */
+            border: 0;
+            border-top: 1px solid #ccc; /* 設置線條的粗細和顏色 */
+        }
+
+        .tip p {
+            margin: 0px 20px 0px 20px;
+            font-size: 0.8rem;
+            color: #a8a8a8;
+        }
+
+        .create-account {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto 0px 0px 0px;
+        }
+
+        .create-account p {
+            margin: 0; /* 移除默認外邊距 */
+            font-size: 0.9rem;
+            color: #a3a2a2;
+        }
+
+        .create-account a {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color:#ee4d2d;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar" id="title">
+        <img src="./image/title.png" alt="shopee" class="logo">
+        <p class="title">登入</p>
+        <a href="#">需要幫助?</a>
+    </div>
+
+    <div class="main">
+        <div class="login-container">
+            <p>登入</p>
+
+            <form action="shopee.html" method="post">
+                <div class="form-inputs">
+                    <input type="text" name="username" placeholder="電話號碼/使用者名稱/Email" required>
+                    <input type="password" name="password" placeholder="密碼" required>
+                </div>
+                <button type="submit">登入</button>
+            </form>
+
+
+            <a href="#">忘記密碼</a>
+
+            <div class="tip">
+                <hr>
+                <p>或</p>
+                <hr>
+            </div>
+
+            <div class="create-account">
+                <p>蝦皮新朋友?</p>
+                <a href="#">註冊</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
